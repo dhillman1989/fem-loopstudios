@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+  overflow-x: none;
+}
+
+section {
+  margin: 0 auto;
+  width: calc(100% - 4rem);
+  max-width: 900px;
+}
+
+@media only screen and(min-width: 800px) {
+  .previews {
+    margin: 5rem auto;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-rows: 25px, repeat(autofill, 350px);
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    & .heading {
+      grid-area: 1 / 1 / 1 / 3;
+      margin-bottom: 0;
+    }
+    & .button {
+      grid-area: 1 / 3 / 1 / 5;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+body {
+  font-family: 'Alata', sans-serif;
+}
+
+.heading {
+  font-family: 'josefin sans', sans-serif;
+  text-transform: uppercase;
+  &--primary {
+    color: #fff;
+    font-size: 3.5rem;
+  }
+  &--secondary {
+    margin: 0rem 0 3rem 0;
+    font-size: 3rem;
+  }
+  &--light {
+    color: #666;
+  }
+}
